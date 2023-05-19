@@ -14,6 +14,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sn
 
+from tqdm import tqdm
+from sklearn.metrics import classification_report
+
 # checking if there is any GPU for faser training
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
@@ -209,21 +212,17 @@ for l in range(7):
     print('Accuracy of %5s : %2d %%' % (
         class_names[l], 100 * class_correct[l] / class_total[l]))
 
-# making dir for saving graphs
-savepath = 'graphs'
-try:
-    os.mkdir(savepath)
-except Exception:
-    pass
+# classification report
+test_labels = []
+test_preds = []
 
-# making graphs for presentation(val_data acc, loss)
-val_acc = [i.cpu().numpy() for i in val_acc]
+with torch.no_grad():
+    for i, (inputs, labels) in tqdm(enumerate(dataloaders['test'])):
+        inputs = inputs.to(device)
+        labels = labels.to(device)
+        outputs = model_ft(inputs)
+        _, predicted = torch.max(outputs.data, 1)
+        test_labels += list(labels.cpu().numpy())
+        test_preds += list(predicted.cpu().numpy())
 
-plt.figure()
-plt.title('Ratio of number epochs for validation accuracy, loss')
-plt.xlabel('Epoch')
-plt.ylabel('Accuracy/Loss')
-
-plt.plot(epoch_counter_val, val_loss, color='r', label="validation loss")
-plt.plot(epoch_counter_val, val_acc, color='m', label="validation accuracy")
-plt.savefig('graphs/ratio_of_number_epochs_for_validation_accuracy_loss.png')
+print(classification_report(test_labels, test_preds, target_names=class_names))
