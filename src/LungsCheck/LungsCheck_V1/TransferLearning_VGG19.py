@@ -186,8 +186,8 @@ torch.save(model_ft, 'model/model_torch.pth')
 # Accuracy on the test data
 correct_it = 0
 all_iter = 0
-class_correct = list(0. for i in range(7))
-class_total = list(0. for i in range(7))
+class_correct = list(0. for i in range(4))
+class_total = list(0. for i in range(4))
 
 with torch.no_grad():
     for i, (inputs, labels) in enumerate(dataloaders['test']):
@@ -208,7 +208,7 @@ with torch.no_grad():
 # printing results
 print('Accuracy on the test data: %d %%' % (100 * correct_it / all_iter))
 
-for l in range(7):
+for l in range(4):
     print('Accuracy of %5s : %2d %%' % (
         class_names[l], 100 * class_correct[l] / class_total[l]))
 
