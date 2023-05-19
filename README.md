@@ -21,7 +21,7 @@ https://drive.google.com/drive/folders/1PHT2ZVzbfxccRnOb5tl2r4Enrk7YXlMP?usp=sha
 - Normal
 - Tuberculosis
 
-<p>К сожалению медицинские данные очень ценный ресурс, который очень трудно найти, если ты не сотрудничаешь с медицинской компаний, поэтому в первой версии наблюдается довольно сильный дисбаланс классов.</p>
+<p>Unfortunately, medical data is a very valuable resource that is very difficult to find unless you work with a medical company, so there is a rather strong class imbalance in the first version.</p>
 
 ![disbal_train_v1](img/LungsCheck/LungsCheck_V1/disbal_train.png "Lungs Images train")
 
@@ -29,7 +29,7 @@ https://drive.google.com/drive/folders/1PHT2ZVzbfxccRnOb5tl2r4Enrk7YXlMP?usp=sha
 
 ![disbal_val_v1](img/LungsCheck/LungsCheck_V1/disbal_val.png "Lungs Images val")
 
-<p>Для того, чтобы избавится от него, было принято решениие выравнять количество элементов в каждом классу по минимальному количеству.</p>
+<p>In order to get rid of it, it was decided to equalize the number of elements in each class according to the minimum number.</p>
 
 ## **3) Results**
 
