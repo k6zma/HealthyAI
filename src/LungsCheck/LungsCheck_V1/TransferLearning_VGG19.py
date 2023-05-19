@@ -154,7 +154,7 @@ def train_model(model, criterion, optimizer, scheduler, num_epochs):
 
 
 model_ft = models.vgg19_bn(pretrained=True)
-model_ft.classifier[6].out_features = 4
+model_ft.classifier[6].out_features = 7
 
 # off layers for training
 for param in model_ft.features.parameters():
