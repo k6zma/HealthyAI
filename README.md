@@ -33,4 +33,15 @@ https://drive.google.com/drive/folders/1PHT2ZVzbfxccRnOb5tl2r4Enrk7YXlMP?usp=sha
 
 ## **3) Results**
 
-<p>LungsModel V2 is currently being trained</p>
+### **LungsCheck V2**
+
+|                  | **precision** | **recall** | **f1-score** | **support** |
+| ---------------- | ------------- | ---------- | ------------ | ----------- |
+| **COVID-19**     | 0.91          | 0.97       | 0.94         | 300         |
+| **NORMAL LUNGS** | 0.99          | 0.78       | 0.87         | 300         |
+| **PNEUNOMIA**    | 0.91          | 0.99       | 0.95         | 300         |
+| **TUBERCULOSIS** | 0.95          | 1.00       | 0.97         | 300         |
+|                  |               |            |              |             |
+| **accuracy**     |               |            | 0.94         | 1200        |
+| **macro avg**    | 0.94          | 0.94       | 0.93         | 1200        |
+| **weighted**     | 0.94          | 0.94       | 0.93         | 1200        |
