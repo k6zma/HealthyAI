@@ -4,10 +4,6 @@
 
 <img src="https://img.shields.io/badge/PYTHON-black?style=for-the-badge&logo=python&logoColor=gold"/><img src="https://img.shields.io/badge/PYTORCH-black?style=for-the-badge&logo=PyTorch&logoColor=orange"/><img src="https://img.shields.io/badge/JUPYTER-black?style=for-the-badge&logo=jupyter&logoColor=orange"/><img src="https://img.shields.io/badge/LINUX-black?style=for-the-badge&logo=linux&logoColor=yellow"/><img src="https://img.shields.io/badge/GIT-black?style=for-the-badge&logo=git&logoColor=orange"/><img src="https://img.shields.io/badge/NUMPY-black?style=for-the-badge&logo=NumPy&logoColor=013243"/><img src="https://img.shields.io/badge/PANDAS-black?style=for-the-badge&logo=Pandas&logoColor=pink"/><img src="https://img.shields.io/badge/VSC-black?style=for-the-badge&logo=Visual Studio Code&logoColor=007ACC"/><img src="https://img.shields.io/badge/GITHUB-black?style=for-the-badge&logo=GitHub&logoColor=white"/>
 
-## **Data link**:
-
-https://drive.google.com/drive/folders/1PHT2ZVzbfxccRnOb5tl2r4Enrk7YXlMP?usp=share_link
-
 ## **Idea of project**:
 
 <p>My project is a system based on neural networks that allows you to quickly and accurately identify possible lung diseases from photographs. The system is able to detect such dangerous diseases as pneumonia, tuberculosis and coronavirus, which will help doctors quickly and accurately diagnose and prescribe the necessary treatment.</p>
